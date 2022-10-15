@@ -8,3 +8,11 @@ node_modules
 package-lock.json
 yarn.lock
 netlify
+source/scss/_buttons.scss
+source/scss/_common.scss
+source/scss/_mixins.scss
+source/scss/_typography.scss
+source/scss/_variables.scss
+source/scss/style.scss
+source/scss/templates/_main.scss
+source/scss/templates/_navigation.scss

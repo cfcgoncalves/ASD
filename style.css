@@ -7,9 +7,9 @@
 --text-gray: #808291;
 --text-white: #f8f9fa;
 --text-light: #f6f6f6;
---text-dark: #1A3260;
---text-dark2: #1A3760D4;
---text-red: #ff4d6d;
+--text-dark: #053666;
+--text-dark2: #426485;
+--text-red: #E11D40;
 --box-shadow: 0px 0px 50px 0px rgb(0 0 0/10%);
 --bg-blue: rgb(249,243,255);
 --bg-red: rgb(254,247,252);
@@ -20,12 +20,12 @@
 --font-poppins: "Poppins", "sans-serif";
 
 /*gradient colors*/
---bg-gradient: linear-gradient(to right, #ff512f, #dd2476);
---bg-gradient-indigo: linear-gradient(to right, #8e2de2, #4a00e0);
+--bg-gradient: linear-gradient(to right, #48a258, #48a258);
+--bg-gradient-indigo: linear-gradient(to right, #053666, #053666);
 --bg-gradient-peach: linear-gradient(to right, #fff7f3, #fff7f3);
 
 /*images*/
-
+--bg-cover: url('./assets/Untitled-2.png')
 
 }
 
@@ -198,12 +198,12 @@ ul{
 }
 
 .link{
-    color: var(--text-dark2);
+    color: var(--text-white);
     font-weight: bold;
 }
 
 .link:hover{
-    color: var(--text-red);
+    color: var(--text-dark);
 }
 
 .btn{
@@ -256,3 +256,141 @@ ul{
     width: 50%;
 }
 /*------------- /Global Classes -------------*/
+
+
+
+/*------------- Media Query -------------*/
+
+/*For Small Screens sm(640px)*/
+
+@media(min-width: 640px){
+    .container{
+        max-width: 640px;
+    }
+
+    .sm-text-xl{
+        font-size: 3em;
+    }
+}
+
+
+
+/*For Medium Screens md(768px)*/
+
+@media(min-width: 768px){
+    .container{
+        max-width: 768px;
+    }
+
+}
+
+
+/*For Large Screens lg(1024px)*/
+
+@media(min-width: 1024px){
+    .container{
+        max-width: 1024px;
+    }
+
+    #nav .toggle-btn > button{
+        display: none;
+    }
+    #nav{
+        flex-direction: row !important;
+    }
+
+    .collapse{
+        max-height: initial !important;
+    }
+
+    .collapse ul{
+        flex-direction: row !important;
+    }
+    .active{
+        max-height: 100% !important;
+    }
+
+}
+
+/*For Large Screens xl(1280px)*/
+
+@media(min-width: 1280px){
+    .container{
+        max-width: 1280px;
+    }
+    #nav .flex-initial ul button{
+        display: inline-block !important;
+    }
+
+}
+
+
+/*------------- /Media Query -------------*/
+
+
+
+
+/*------------- Navigation Style -------------*/
+
+#nav{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: var(--text-red);
+    flex-direction: column;
+}
+
+#nav .collapse{
+    max-height: 0px;
+    overflow-y: hidden;
+    transition: all 0.9s ease;
+}
+
+#nav .collapse ul{
+    flex-direction: column;
+    text-align: center;
+    padding: 0 3rem;
+}
+
+#nav .collapse ul > li{
+    padding: 0 1.5rem;
+    line-height: 3rem;
+    font-size: 1.1em;
+}
+
+#nav .toggle-btn > button{
+    position: absolute;
+    font-size: 2em;
+    right: 0; top: 0;
+    padding: 1rem;
+    color: var(--text-dark2);
+}
+
+#nav .flex-initial > ul button{
+   display: none;
+}
+
+.active{
+    max-height: 50vh !important;
+ }
+
+/*------------- /Navigation Style -------------*/
+
+/*------------- Banner Style -------------*/
+#site-main .banner-area{
+    width: 100%;
+    position: relative;
+    background: var(--bg-cover) no-repeat;
+    background-position-x: right;
+    z-index: -99;
+ }
+
+ #site-main .banner-area .banner-title{
+    height: 95vh;
+    padding-top: 16rem;
+
+    
+ }
+
+/*------------- /Banner Style -------------*/

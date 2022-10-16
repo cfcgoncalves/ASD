@@ -112,6 +112,7 @@ ul{
 
 .text-md{
     font-size: 1.5em;
+    line-height: 3rem;
  }
 
  .text-lg{
@@ -250,7 +251,6 @@ ul{
 .cols-1{
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    grid-template-rows: repeat(6,minmax());
 }
 
 .w-100{

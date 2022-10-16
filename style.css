@@ -338,6 +338,16 @@ ul{
         grid-template-columns: repeat(4, minmax(0,1fr));
     }
 
+    #site-main .banner-area{
+        width: 100%;
+        position: relative;
+        /*background: var(--bg-carnation) no-repeat;
+        background-position-x: right;*/
+        z-index: -99;
+     }
+
+  
+
 }
 
 /*For Large Screens xl(1280px)*/
@@ -349,6 +359,8 @@ ul{
     #nav .flex-initial ul button{
         display: inline-block !important;
     }
+
+    
 
 }
 
@@ -406,19 +418,11 @@ ul{
 /*------------- /Navigation Style -------------*/
 
 /*------------- Banner Style -------------*/
-#site-main .banner-area{
-    width: 100%;
-    position: relative;
-    background: var(--bg-cover) no-repeat, var(--bg-carnation) no-repeat;;
-    background-position-x: right, left;
-    z-index: -99;
- }
+
 
  #site-main .banner-area .banner-title{
-    height: 95vh;
+    height: 65vh;
     padding-top: 16rem;
-
-    
  }
 
 /*------------- /Banner Style -------------*/
@@ -428,6 +432,7 @@ ul{
 #footer{
     border-top: 2px solid var(--text-light);
     margin-top: 8em;
+    
  }
 
  #footer .grid{

@@ -248,7 +248,9 @@ ul{
 }
 
 .cols-1{
+    display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-rows: repeat(6,minmax());
 }
 
 .w-100{
@@ -289,6 +291,7 @@ ul{
         margin: initial;
     }
     .md-cols-2{
+        display: grid;
         grid-template-columns: repeat(2, minmax(0,1fr));
     }
 
@@ -321,14 +324,17 @@ ul{
     }
 
     .lg-cols-2{
+        display: grid;
         grid-template-columns: repeat(2, minmax(0,1fr));
     }
 
     .lg-cols-3{
+        display: grid;
         grid-template-columns: repeat(3, minmax(0,1fr));
     }
 
     .lg-cols-4{
+        display: grid;
         grid-template-columns: repeat(4, minmax(0,1fr));
     }
 
@@ -403,8 +409,8 @@ ul{
 #site-main .banner-area{
     width: 100%;
     position: relative;
-    background: var(--bg-cover) no-repeat;
-    background-position-x: right;
+    background: var(--bg-cover) no-repeat, var(--bg-carnation) no-repeat;;
+    background-position-x: right, left;
     z-index: -99;
  }
 
